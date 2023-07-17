@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Impostos
+namespace DesignPatterns.Descontos
 {
-    public class Orcamento
+    public class Item
     {
+        public string Nome { get; private set; }
         public double Valor { get; private set; }
-
-        public Orcamento(double valor)
+        public Item(string nome, double valor)
         {
+            Nome = nome;
             Valor = valor;
         }
     }
